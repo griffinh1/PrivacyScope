@@ -1,0 +1,215 @@
+2021-02-28 16:27:31,906 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 1: Launching browser...
+2021-02-28 16:27:31,909 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 1: Spawn attempt 0 
+2021-02-28 16:27:31,920 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 1: Saved extension config file to: /var/folders/zn/2wxdf5l57nzc27_6xn5fcflr0000gn/T/tmpsmp3n46j/browser_params.json
+2021-02-28 16:27:32,486 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 1614547652485	geckodriver	INFO	Listening on 127.0.0.1:49846
+2021-02-28 16:27:32,975 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 1614547652975	mozrunner::runner	INFO	Running command: "/Users/haeleygriffin/cmpsc600/OpenWPM/Nightly.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--width=1366" "--height=768" "-foreground" "-no-remote" "-profile" "/var/folders/zn/2wxdf5l57nzc27_6xn5fcflr0000gn/T/rust_mozprofilemAqrBy"
+2021-02-28 16:27:36,912 - MainProcess[MainThread]- base_aggregator      - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2021-02-28 16:27:41,148 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: *** You are running in headless mode.
+2021-02-28 16:27:41,920 - MainProcess[MainThread]- base_aggregator      - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2021-02-28 16:27:43,135 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+2021-02-28 16:27:43,919 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 1614547663919	Marionette	INFO	Listening on port 49857
+2021-02-28 16:27:43,978 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 1614547663978	Marionette	WARN	TLS certificate errors will be ignored for this session
+2021-02-28 16:27:44,045 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 1: OpenWPM Firefox extension loaded
+2021-02-28 16:27:44,049 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Navigation instrumentation enabled
+2021-02-28 16:27:44,050 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Cookie instrumentation enabled
+2021-02-28 16:27:44,050 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Javascript instrumentation enabled
+2021-02-28 16:27:44,051 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 1: Looking for extension port information in /var/folders/zn/2wxdf5l57nzc27_6xn5fcflr0000gn/T/rust_mozprofilemAqrBy/
+2021-02-28 16:27:44,056 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: console.log: WebExtensions: Wrote to /var/folders/zn/2wxdf5l57nzc27_6xn5fcflr0000gn/T/rust_mozprofilemAqrBy/extension_port.txt
+2021-02-28 16:27:44,058 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : HTTP Instrumentation enabled
+2021-02-28 16:27:44,061 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Callstack Instrumentation enabled
+2021-02-28 16:27:44,061 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : DNS instrumentation enabled
+2021-02-28 16:27:44,153 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 1: Connecting to extension on port 49985
+2021-02-28 16:27:44,154 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 1: BrowserManager ready.
+2021-02-28 16:27:44,154 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 1: Browser spawn sucessful!
+2021-02-28 16:27:44,293 - MainProcess[MainThread]- task_manager         - INFO    : 
+
+OpenWPM Version: b'v0.13.0-21-ga81d80a'
+Firefox Version: b'83.0'
+
+========== Manager Configuration ==========
+{
+  "_failure_limit": null,
+  "aggregator_address": [
+    "127.0.0.1",
+    49843
+  ],
+  "data_directory": "/Users/haeleygriffin/Desktop/",
+  "database_name": "/Users/haeleygriffin/Desktop/crawl-data.sqlite",
+  "ldb_address": [],
+  "log_directory": "/Users/haeleygriffin/Desktop/",
+  "log_file": "/Users/haeleygriffin/Desktop/openwpm.log",
+  "logger_address": [
+    "127.0.0.1",
+    49842
+  ],
+  "memory_watchdog": false,
+  "num_browsers": 1,
+  "output_format": "local",
+  "process_watchdog": false,
+  "s3_bucket": null,
+  "s3_directory": null,
+  "screenshot_path": "/Users/haeleygriffin/Desktop/screenshots",
+  "source_dump_path": "/Users/haeleygriffin/Desktop/sources",
+  "testing": false
+}
+
+========== Browser Configuration ==========
+Keys:
+{
+  "browser_id": 0,
+  "bot_mitigation": 1,
+  "browser": 2,
+  "callstack_instrument": 3,
+  "cookie_instrument": 4,
+  "display_mode": 5,
+  "dns_instrument": 6,
+  "donottrack": 7,
+  "extension_enabled": 8,
+  "http_instrument": 9,
+  "js_instrument": 10,
+  "navigation_instrument": 11,
+  "prefs": 12,
+  "profile_path": 13,
+  "recovery_tar": 14,
+  "save_content": 15,
+  "tp_cookies": 16,
+  "tracking_protection": 17
+}
+
+  0  1      2        3     4     5         6     7      8     9     10    11    12    13    14    15     16      17
+---  -----  -------  ----  ----  --------  ----  -----  ----  ----  ----  ----  ----  ----  ----  -----  ------  -----
+  1  False  firefox  True  True  headless  True  False  True  True  True  True  {}                False  always  False
+
+========== JS Instrument Settings ==========
+{
+  "1": "[{\"object\": window['ScriptProcessorNode'].prototype, \"instrumentedName\": \"ScriptProcessorNode\", \"logSettings\": {\"propertiesToInstrument\": [], \"nonExistingPropertiesToInstrument\": [], \"excludedProperties\": [], \"logCallStack\": false, \"logFunctionsAsStrings\": false, \"logFunctionGets\": false, \"preventSets\": false, \"recursive\": false, \"depth\": 5}}, {\"object\": window['GainNode'].prototype, \"instrumentedName\": \"GainNode\", \"logSettings\": {\"propertiesToInstrument\": [], \"nonExistingPropertiesToInstrument\": [], \"excludedProperties\": [], \"logCallStack\": false, \"logFunctionsAsStrings\": false, \"logFunctionGets\": false, \"preventSets\": false, \"recursive\": false, \"depth\": 5}}, {\"object\": window['AnalyserNode'].prototype, \"instrumentedName\": \"AnalyserNode\", \"logSettings\": {\"propertiesToInstrument\": [], \"nonExistingPropertiesToInstrument\": [], \"excludedProperties\": [], \"logCallStack\": false, \"logFunctionsAsStrings\": false, \"logFunctionGets\": false, \"preventSets\": false, \"recursive\": false, \"depth\": 5}}, {\"object\": window['OscillatorNode'].prototype, \"instrumentedName\": \"OscillatorNode\", \"logSettings\": {\"propertiesToInstrument\": [], \"nonExistingPropertiesToInstrument\": [], \"excludedProperties\": [], \"logCallStack\": false, \"logFunctionsAsStrings\": false, \"logFunctionGets\": false, \"preventSets\": false, \"recursive\": false, \"depth\": 5}}, {\"object\": window['OfflineAudioContext'].prototype, \"instrumentedName\": \"OfflineAudioContext\", \"logSettings\": {\"propertiesToInstrument\": [], \"nonExistingPropertiesToInstrument\": [], \"excludedProperties\": [], \"logCallStack\": false, \"logFunctionsAsStrings\": false, \"logFunctionGets\": false, \"preventSets\": false, \"recursive\": false, \"depth\": 5}}, {\"object\": window['AudioContext'].prototype, \"instrumentedName\": \"AudioContext\", \"logSettings\": {\"propertiesToInstrument\": [], \"nonExistingPropertiesToInstrument\": [], \"excludedProperties\": [], \"logCallStack\": false, \"logFunctionsAsStrings\": false, \"logFunctionGets\": false, \"preventSets\": false, \"recursive\": false, \"depth\": 5}}, {\"object\": window['RTCPeerConnection'].prototype, \"instrumentedName\": \"RTCPeerConnection\", \"logSettings\": {\"propertiesToInstrument\": [], \"nonExistingPropertiesToInstrument\": [], \"excludedProperties\": [], \"logCallStack\": false, \"logFunctionsAsStrings\": false, \"logFunctionGets\": false, \"preventSets\": false, \"recursive\": false, \"depth\": 5}}, {\"object\": window['HTMLCanvasElement'].prototype, \"instrumentedName\": \"HTMLCanvasElement\", \"logSettings\": {\"propertiesToInstrument\": [], \"nonExistingPropertiesToInstrument\": [], \"excludedProperties\": [], \"logCallStack\": false, \"logFunctionsAsStrings\": false, \"logFunctionGets\": false, \"preventSets\": false, \"recursive\": false, \"depth\": 5}}, {\"object\": window['Storage'].prototype, \"instrumentedName\": \"Storage\", \"logSettings\": {\"propertiesToInstrument\": [], \"nonExistingPropertiesToInstrument\": [], \"excludedProperties\": [], \"logCallStack\": false, \"logFunctionsAsStrings\": false, \"logFunctionGets\": false, \"preventSets\": false, \"recursive\": false, \"depth\": 5}}, {\"object\": window.navigator, \"instrumentedName\": \"window.navigator\", \"logSettings\": {\"propertiesToInstrument\": [], \"nonExistingPropertiesToInstrument\": [], \"excludedProperties\": [], \"logCallStack\": false, \"logFunctionsAsStrings\": false, \"logFunctionGets\": false, \"preventSets\": false, \"recursive\": false, \"depth\": 5}}, {\"object\": window['CanvasRenderingContext2D'].prototype, \"instrumentedName\": \"CanvasRenderingContext2D\", \"logSettings\": {\"propertiesToInstrument\": [], \"nonExistingPropertiesToInstrument\": [], \"excludedProperties\": [\"setTransform\", \"quadraticCurveTo\", \"beginPath\", \"translate\", \"lineTo\", \"canvas\", \"transform\", \"closePath\", \"moveTo\", \"clearRect\", \"globalAlpha\", \"drawImage\"], \"logCallStack\": false, \"logFunctionsAsStrings\": false, \"logFunctionGets\": false, \"preventSets\": false, \"recursive\": false, \"depth\": 5}}, {\"object\": window, \"instrumentedName\": \"window\", \"logSettings\": {\"propertiesToInstrument\": [\"name\", \"localStorage\", \"sessionStorage\"], \"nonExistingPropertiesToInstrument\": [], \"excludedProperties\": [], \"logCallStack\": false, \"logFunctionsAsStrings\": false, \"logFunctionGets\": false, \"preventSets\": false, \"recursive\": false, \"depth\": 5}}, {\"object\": window.document, \"instrumentedName\": \"window.document\", \"logSettings\": {\"propertiesToInstrument\": [\"cookie\", \"referrer\"], \"nonExistingPropertiesToInstrument\": [], \"excludedProperties\": [], \"logCallStack\": true, \"logFunctionsAsStrings\": false, \"logFunctionGets\": false, \"preventSets\": false, \"recursive\": false, \"depth\": 5}}, {\"object\": window.screen, \"instrumentedName\": \"window.screen\", \"logSettings\": {\"propertiesToInstrument\": [\"pixelDepth\", \"colorDepth\"], \"nonExistingPropertiesToInstrument\": [], \"excludedProperties\": [], \"logCallStack\": false, \"logFunctionsAsStrings\": false, \"logFunctionGets\": false, \"preventSets\": false, \"recursive\": false, \"depth\": 5}}]"
+}
+
+========== Input profile tar files ==========
+  No profile tar files specified
+
+========== Output (archive) profile dirs ==========
+  No profile archive directories specified
+
+
+2021-02-28 16:27:44,294 - MainProcess[MainThread]- task_manager         - DEBUG   : Checking command failure status indicator...
+2021-02-28 16:27:44,295 - MainProcess[Thread-8  ]- task_manager         - INFO    : Starting to work on CommandSequence with visit_id 1 on browser with id 1
+2021-02-28 16:27:44,297 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 1: EXECUTING COMMAND: IntitializeCommand()
+2021-02-28 16:27:44,299 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 1: EXECUTING COMMAND: GetCommand(http://www.example.com,3)
+2021-02-28 16:27:44,455 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Setting visit_id the legacy way
+2021-02-28 16:27:46,937 - MainProcess[MainThread]- base_aggregator      - DEBUG   : Status update; current record queue size: 0. current number of threads: 5.
+2021-02-28 16:27:48,093 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 1: EXECUTING COMMAND: LinkCountingCommand
+2021-02-28 16:27:48,120 - MainProcess[MainThread]- custom_command       - INFO    : There are 1 links on http://www.example.com/
+2021-02-28 16:27:48,121 - MainProcess[MainThread]- browser_manager      - INFO    : BROWSER 1: EXECUTING COMMAND: FinalizeCommand(5)
+2021-02-28 16:27:51,948 - MainProcess[MainThread]- base_aggregator      - DEBUG   : Status update; current record queue size: 0. current number of threads: 5.
+2021-02-28 16:27:53,255 - MainProcess[Thread-8  ]- task_manager         - INFO    : Finished working on CommandSequence with visit_id 1 on browser with id 1
+2021-02-28 16:27:54,337 - MainProcess[OpenWPM-completion_handler]- task_manager         - DEBUG   : Invoking callback of visit_id 1
+2021-02-28 16:27:54,605 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 161: TypeError: date is undefined
+2021-02-28 16:27:55,259 - MainProcess[Thread-8  ]- browser_manager      - INFO    : BROWSER 1: BrowserManager restart initiated. Clear profile? True
+2021-02-28 16:27:55,260 - MainProcess[Thread-8  ]- browser_manager      - DEBUG   : BROWSER 1: Closing browser...
+2021-02-28 16:27:55,265 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 1614547675265	Marionette	INFO	Stopped listening on port 49857
+2021-02-28 16:27:55,410 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: console.error: WebExtensions:
+2021-02-28 16:27:55,410 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: Message: [Exception... "Component returned failure code: 0x804b0010 (NS_ERROR_OFFLINE) [nsIInputStream.available]"  nsresult: "0x804b0010 (NS_ERROR_OFFLINE)"  location: "JS frame :: jar:file:///Users/haeleygriffin/cmpsc600/OpenWPM/openwpm/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js :: onInputStreamReady :: line 51"  data: no]
+2021-02-28 16:27:55,410 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: Stack:
+2021-02-28 16:27:55,411 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: onInputStreamReady@jar:file:///Users/haeleygriffin/cmpsc600/OpenWPM/openwpm/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js:51:33
+2021-02-28 16:27:55,411 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 
+2021-02-28 16:27:55,616 - MainProcess[Thread-8  ]- browser_manager      - DEBUG   : BROWSER 1: Browser manager closed successfully.
+2021-02-28 16:27:55,617 - MainProcess[Thread-8  ]- browser_manager      - INFO    : BROWSER 1: Launching browser...
+2021-02-28 16:27:55,617 - MainProcess[Thread-8  ]- browser_manager      - DEBUG   : BROWSER 1: Spawn attempt 0 
+2021-02-28 16:27:55,629 - MainProcess[Thread-8  ]- deploy_firefox       - DEBUG   : BROWSER 1: Saved extension config file to: /var/folders/zn/2wxdf5l57nzc27_6xn5fcflr0000gn/T/tmpxhloi382/browser_params.json
+2021-02-28 16:27:55,653 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 1614547675651	geckodriver	INFO	Listening on 127.0.0.1:49992
+2021-02-28 16:27:56,681 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 1614547676680	mozrunner::runner	INFO	Running command: "/Users/haeleygriffin/cmpsc600/OpenWPM/Nightly.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--width=1366" "--height=768" "-foreground" "-no-remote" "-profile" "/var/folders/zn/2wxdf5l57nzc27_6xn5fcflr0000gn/T/rust_mozprofiletrScQ0"
+2021-02-28 16:27:56,756 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: *** You are running in headless mode.
+2021-02-28 16:27:56,956 - MainProcess[MainThread]- base_aggregator      - DEBUG   : Status update; current record queue size: 0. current number of threads: 5.
+2021-02-28 16:27:58,382 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+2021-02-28 16:27:59,200 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 1614547679200	Marionette	INFO	Listening on port 50005
+2021-02-28 16:27:59,304 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 1614547679304	Marionette	WARN	TLS certificate errors will be ignored for this session
+2021-02-28 16:27:59,359 - MainProcess[Thread-8  ]- deploy_firefox       - DEBUG   : BROWSER 1: OpenWPM Firefox extension loaded
+2021-02-28 16:27:59,361 - MainProcess[Thread-8  ]- browser_manager      - DEBUG   : BROWSER 1: Looking for extension port information in /var/folders/zn/2wxdf5l57nzc27_6xn5fcflr0000gn/T/rust_mozprofiletrScQ0/
+2021-02-28 16:27:59,363 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Navigation instrumentation enabled
+2021-02-28 16:27:59,364 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Cookie instrumentation enabled
+2021-02-28 16:27:59,364 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Javascript instrumentation enabled
+2021-02-28 16:27:59,371 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: console.log: WebExtensions: Wrote to /var/folders/zn/2wxdf5l57nzc27_6xn5fcflr0000gn/T/rust_mozprofiletrScQ0/extension_port.txt
+2021-02-28 16:27:59,375 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : HTTP Instrumentation enabled
+2021-02-28 16:27:59,377 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Callstack Instrumentation enabled
+2021-02-28 16:27:59,378 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : DNS instrumentation enabled
+2021-02-28 16:27:59,462 - MainProcess[Thread-8  ]- browser_manager      - DEBUG   : BROWSER 1: Connecting to extension on port 50047
+2021-02-28 16:27:59,463 - MainProcess[Thread-8  ]- browser_manager      - DEBUG   : BROWSER 1: BrowserManager ready.
+2021-02-28 16:27:59,464 - MainProcess[Thread-8  ]- browser_manager      - DEBUG   : BROWSER 1: Browser spawn sucessful!
+2021-02-28 16:27:59,515 - MainProcess[MainThread]- task_manager         - DEBUG   : Checking command failure status indicator...
+2021-02-28 16:27:59,515 - MainProcess[Thread-10 ]- task_manager         - INFO    : Starting to work on CommandSequence with visit_id 2 on browser with id 1
+2021-02-28 16:27:59,519 - MainProcess[Thread-8  ]- browser_manager      - INFO    : BROWSER 1: EXECUTING COMMAND: IntitializeCommand()
+2021-02-28 16:27:59,520 - MainProcess[Thread-8  ]- browser_manager      - INFO    : BROWSER 1: EXECUTING COMMAND: GetCommand(http://www.princeton.edu,3)
+2021-02-28 16:27:59,691 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Setting visit_id the legacy way
+2021-02-28 16:28:01,974 - MainProcess[MainThread]- base_aggregator      - DEBUG   : Status update; current record queue size: 3. current number of threads: 6.
+2021-02-28 16:28:04,098 - MainProcess[Thread-8  ]- browser_manager      - INFO    : BROWSER 1: EXECUTING COMMAND: LinkCountingCommand
+2021-02-28 16:28:04,165 - MainProcess[Thread-8  ]- custom_command       - INFO    : There are 129 links on https://www.princeton.edu/
+2021-02-28 16:28:04,167 - MainProcess[Thread-8  ]- browser_manager      - INFO    : BROWSER 1: EXECUTING COMMAND: FinalizeCommand(5)
+2021-02-28 16:28:06,987 - MainProcess[MainThread]- base_aggregator      - DEBUG   : Status update; current record queue size: 0. current number of threads: 6.
+2021-02-28 16:28:09,307 - MainProcess[Thread-10 ]- task_manager         - INFO    : Finished working on CommandSequence with visit_id 2 on browser with id 1
+2021-02-28 16:28:09,691 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 161: TypeError: date is undefined
+2021-02-28 16:28:10,408 - MainProcess[OpenWPM-completion_handler]- task_manager         - DEBUG   : Invoking callback of visit_id 2
+2021-02-28 16:28:11,312 - MainProcess[Thread-10 ]- browser_manager      - INFO    : BROWSER 1: BrowserManager restart initiated. Clear profile? True
+2021-02-28 16:28:11,314 - MainProcess[Thread-10 ]- browser_manager      - DEBUG   : BROWSER 1: Closing browser...
+2021-02-28 16:28:11,327 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 1614547691327	Marionette	INFO	Stopped listening on port 50005
+2021-02-28 16:28:11,465 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: console.error: WebExtensions:
+2021-02-28 16:28:11,466 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: Message: [Exception... "Component returned failure code: 0x804b0010 (NS_ERROR_OFFLINE) [nsIInputStream.available]"  nsresult: "0x804b0010 (NS_ERROR_OFFLINE)"  location: "JS frame :: jar:file:///Users/haeleygriffin/cmpsc600/OpenWPM/openwpm/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js :: onInputStreamReady :: line 51"  data: no]
+2021-02-28 16:28:11,466 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: Stack:
+2021-02-28 16:28:11,466 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: onInputStreamReady@jar:file:///Users/haeleygriffin/cmpsc600/OpenWPM/openwpm/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js:51:33
+2021-02-28 16:28:11,466 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 
+2021-02-28 16:28:11,686 - MainProcess[Thread-10 ]- browser_manager      - DEBUG   : BROWSER 1: Browser manager closed successfully.
+2021-02-28 16:28:11,686 - MainProcess[Thread-10 ]- browser_manager      - INFO    : BROWSER 1: Launching browser...
+2021-02-28 16:28:11,686 - MainProcess[Thread-10 ]- browser_manager      - DEBUG   : BROWSER 1: Spawn attempt 0 
+2021-02-28 16:28:11,697 - MainProcess[Thread-10 ]- deploy_firefox       - DEBUG   : BROWSER 1: Saved extension config file to: /var/folders/zn/2wxdf5l57nzc27_6xn5fcflr0000gn/T/tmptkhwlw8m/browser_params.json
+2021-02-28 16:28:11,718 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 1614547691717	geckodriver	INFO	Listening on 127.0.0.1:50056
+2021-02-28 16:28:11,997 - MainProcess[MainThread]- base_aggregator      - DEBUG   : Status update; current record queue size: 0. current number of threads: 5.
+2021-02-28 16:28:12,742 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 1614547692742	mozrunner::runner	INFO	Running command: "/Users/haeleygriffin/cmpsc600/OpenWPM/Nightly.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--width=1366" "--height=768" "-foreground" "-no-remote" "-profile" "/var/folders/zn/2wxdf5l57nzc27_6xn5fcflr0000gn/T/rust_mozprofileycfOz2"
+2021-02-28 16:28:12,816 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: *** You are running in headless mode.
+2021-02-28 16:28:14,505 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+2021-02-28 16:28:15,333 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 1614547695333	Marionette	INFO	Listening on port 50067
+2021-02-28 16:28:15,370 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 1614547695370	Marionette	WARN	TLS certificate errors will be ignored for this session
+2021-02-28 16:28:15,440 - MainProcess[Thread-10 ]- deploy_firefox       - DEBUG   : BROWSER 1: OpenWPM Firefox extension loaded
+2021-02-28 16:28:15,444 - MainProcess[Thread-10 ]- browser_manager      - DEBUG   : BROWSER 1: Looking for extension port information in /var/folders/zn/2wxdf5l57nzc27_6xn5fcflr0000gn/T/rust_mozprofileycfOz2/
+2021-02-28 16:28:15,445 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Navigation instrumentation enabled
+2021-02-28 16:28:15,446 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Cookie instrumentation enabled
+2021-02-28 16:28:15,446 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Javascript instrumentation enabled
+2021-02-28 16:28:15,452 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: console.log: WebExtensions: Wrote to /var/folders/zn/2wxdf5l57nzc27_6xn5fcflr0000gn/T/rust_mozprofileycfOz2/extension_port.txt
+2021-02-28 16:28:15,455 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : HTTP Instrumentation enabled
+2021-02-28 16:28:15,457 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Callstack Instrumentation enabled
+2021-02-28 16:28:15,458 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : DNS instrumentation enabled
+2021-02-28 16:28:15,546 - MainProcess[Thread-10 ]- browser_manager      - DEBUG   : BROWSER 1: Connecting to extension on port 50108
+2021-02-28 16:28:15,546 - MainProcess[Thread-10 ]- browser_manager      - DEBUG   : BROWSER 1: BrowserManager ready.
+2021-02-28 16:28:15,547 - MainProcess[Thread-10 ]- browser_manager      - DEBUG   : BROWSER 1: Browser spawn sucessful!
+2021-02-28 16:28:15,585 - MainProcess[MainThread]- task_manager         - DEBUG   : Checking command failure status indicator...
+2021-02-28 16:28:15,586 - MainProcess[Thread-12 ]- task_manager         - INFO    : Starting to work on CommandSequence with visit_id 3 on browser with id 1
+2021-02-28 16:28:15,590 - MainProcess[Thread-10 ]- browser_manager      - INFO    : BROWSER 1: EXECUTING COMMAND: IntitializeCommand()
+2021-02-28 16:28:15,592 - MainProcess[Thread-10 ]- browser_manager      - INFO    : BROWSER 1: EXECUTING COMMAND: GetCommand(http://citp.princeton.edu/,3)
+2021-02-28 16:28:15,784 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Setting visit_id the legacy way
+2021-02-28 16:28:16,217 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: JavaScript error: https://citp.princeton.edu/, line 28: ReferenceError: $ is not defined
+2021-02-28 16:28:17,007 - MainProcess[MainThread]- base_aggregator      - DEBUG   : Status update; current record queue size: 246. current number of threads: 6.
+2021-02-28 16:28:20,385 - MainProcess[Thread-10 ]- browser_manager      - INFO    : BROWSER 1: EXECUTING COMMAND: LinkCountingCommand
+2021-02-28 16:28:20,431 - MainProcess[Thread-10 ]- custom_command       - INFO    : There are 145 links on https://citp.princeton.edu/
+2021-02-28 16:28:20,433 - MainProcess[Thread-10 ]- browser_manager      - INFO    : BROWSER 1: EXECUTING COMMAND: FinalizeCommand(5)
+2021-02-28 16:28:22,031 - MainProcess[MainThread]- base_aggregator      - DEBUG   : Status update; current record queue size: 0. current number of threads: 6.
+2021-02-28 16:28:25,577 - MainProcess[Thread-12 ]- task_manager         - INFO    : Finished working on CommandSequence with visit_id 3 on browser with id 1
+2021-02-28 16:28:25,748 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 161: TypeError: date is undefined
+2021-02-28 16:28:26,477 - MainProcess[OpenWPM-completion_handler]- task_manager         - DEBUG   : Invoking callback of visit_id 3
+2021-02-28 16:28:27,041 - MainProcess[MainThread]- base_aggregator      - DEBUG   : Status update; current record queue size: 0. current number of threads: 6.
+2021-02-28 16:28:27,582 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 1: Closing browser manager...
+2021-02-28 16:28:27,583 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 1: Closing browser...
+2021-02-28 16:28:27,583 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 1: Joining command thread
+2021-02-28 16:28:27,584 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 1: 0.000022 seconds to join command thread
+2021-02-28 16:28:27,594 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 1614547707593	Marionette	INFO	Stopped listening on port 50067
+2021-02-28 16:28:27,743 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: console.error: WebExtensions:
+2021-02-28 16:28:27,744 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: Message: [Exception... "Component returned failure code: 0x804b0010 (NS_ERROR_OFFLINE) [nsIInputStream.available]"  nsresult: "0x804b0010 (NS_ERROR_OFFLINE)"  location: "JS frame :: jar:file:///Users/haeleygriffin/cmpsc600/OpenWPM/openwpm/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js :: onInputStreamReady :: line 51"  data: no]
+2021-02-28 16:28:27,744 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: Stack:
+2021-02-28 16:28:27,744 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: onInputStreamReady@jar:file:///Users/haeleygriffin/cmpsc600/OpenWPM/openwpm/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js:51:33
+2021-02-28 16:28:27,744 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 
+2021-02-28 16:28:27,756 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 
+2021-02-28 16:28:27,756 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: ###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0011,name=PBackgroundStorage::Msg_Observe) Channel error: cannot send/recv
+2021-02-28 16:28:27,756 - MainProcess[log-interceptor-1]- selenium_firefox     - DEBUG   : BROWSER 1: driver: 
+2021-02-28 16:28:27,978 - MainProcess[MainThread]- browser_manager      - DEBUG   : BROWSER 1: Browser manager closed successfully.
+2021-02-28 16:28:27,978 - MainProcess[MainThread]- base_aggregator      - DEBUG   : Sending the shutdown signal to the LocalAggregator listener process...
+2021-02-28 16:28:28,043 - MainProcess[MainThread]- base_aggregator      - INFO    : Received shutdown signal!
+2021-02-28 16:28:31,044 - MainProcess[MainThread]- base_aggregator      - INFO    : Queue was flushed completely
+2021-02-28 16:28:31,060 - MainProcess[MainThread]- base_aggregator      - DEBUG   : LocalAggregator took 3.0807950496673584 seconds to close.
