@@ -1,0 +1,31 @@
+{
+
+  "description": "Adds a browser action icon to the toolbar. Click the button to choose a beast. The active tab's body content is then replaced with a picture of the chosen beast. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#privacyscope",
+  "manifest_version": 2,
+  "name": "\PrivacyScope",
+  "version": "1.0",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/privacyscope",
+  "icons": {
+    "48": "icons/sheild-48.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/security.png",
+    "theme_icons": [{
+        "light": "icons/security-light.png",
+        "dark": "icons/security.png",
+        "size": 32
+    }],
+    "default_title": "PrivacyScope",
+    "default_popup": "popup/main_screen.html"
+  },
+
+  "web_accessible_resources": [
+  
+  ]
+
+}
