@@ -1,11 +1,10 @@
 {
-  "description": "Adds a browser action icon to the toolbar. Click the button to choose a beast. The active tab's body content is then replaced with a picture of the chosen beast. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#beastify",
   "manifest_version": 2,
   "name": "PrivacyScope",
   "version": "1.0",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
   "icons": {
-    "48": "icons/shield-48.png"
+    "48": "icons/shield-48.png",
+    "96": "icons/shield-96.png"
   },
 
   "permissions": [
@@ -13,15 +12,9 @@
   ],
 
   "browser_action": {
-    "default_icon": "icons/sheild.png",
+    "default_icon": "icons/shield-32.png",
     "default_title": "PrivacyScope",
-    "default_popup": "popup/main_ screen.html"
-  },
-
-  "web_accessible_resources": [
-    "beasts/frog.jpg",
-    "beasts/turtle.jpg",
-    "beasts/snake.jpg"
-  ]
+    "default_popup": "popup/main_screen.html"
+  }
 
 }

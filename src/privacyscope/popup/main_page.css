@@ -14,11 +14,11 @@ html, body {
   cursor: pointer;
 }
 
-.beast:hover {
+.privacy:hover {
   background-color: #CFF2F2;
 }
 
-.beast {
+.privacy {
   background-color: #E5F2F2;
 }
 

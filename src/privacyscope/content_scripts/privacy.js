@@ -14,22 +14,22 @@
    * create and style an IMG node pointing to
    * that image, then insert the node into the document.
    */
-  function insertBeast(beastURL) {
-    removeExistingBeasts();
-    let beastImage = document.createElement("img");
-    beastImage.setAttribute("src", beastURL);
-    beastImage.style.height = "100vh";
-    beastImage.className = "beastify-image";
+  function insertPrivacy(privacyURL) {
+    removeExistingPrivacy();
+    let privacyImage = document.createElement("img");
+    privacyImage.setAttribute("src", privacyURL);
+    privacyImage.style.height = "100vh";
+    privacyImage.className = "privicy-image";
     document.body.appendChild(beastImage);
   }
 
   /**
    * Remove every beast from the page.
    */
-  function removeExistingBeasts() {
-    let existingBeasts = document.querySelectorAll(".beastify-image");
-    for (let beast of existingBeasts) {
-      beast.remove();
+  function removeExistingPrivacy) {
+    let existingPrivacy = document.querySelectorAll(".privacy-image");
+    for (let privacy of existingPrivacy) {
+      privacy.remove();
     }
   }
 
@@ -38,10 +38,10 @@
    * Call "beastify()" or "reset()".
   */
   browser.runtime.onMessage.addListener((message) => {
-    if (message.command === "beastify") {
-      insertBeast(message.beastURL);
+    if (message.command === "privacy") {
+      insertPrivacy(message.privacyURL);
     } else if (message.command === "reset") {
-      removeExistingBeasts();
+      removeExistingPrivacy();
     }
   });
 
