@@ -1,17 +1,11 @@
 html, body {
-  width: 100px;
+  width: 300px;
 }
-
+table, th, td {
+  border: 1px solid black;
+}
 .hidden {
   display: none;
-}
-
-.button {
-  margin: 3% auto;
-  padding: 4px;
-  text-align: center;
-  font-size: 1.5em;
-  cursor: pointer;
 }
 
 .privacy:hover {

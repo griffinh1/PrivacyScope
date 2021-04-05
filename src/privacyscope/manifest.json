@@ -14,7 +14,7 @@
   "browser_action": {
     "default_icon": "icons/shield-32.png",
     "default_title": "PrivacyScope",
-    "default_popup": "popup/main_screen.html"
+    "default_popup": "popup/main_page.html"
   }
 
 }
