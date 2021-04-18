@@ -1,96 +1,41 @@
-/**
- * CSS to hide everything on the page,
- * except for elements that have the main_page" class.
- */
-const hidePage = `body > :not(.privacy-image) {
-                    display: none;
-                  }`;
+const api_host = 'http://127.0.0.1:5000/site/';
+let content = document.getElementById('content');
+let site_url = document.getElementById('site_url');
 
-/**
- * Listen for clicks on the buttons, and send the appropriate message to
- * the content script in the page.
- */
-function listenForClicks() {
-  document.addEventListener("click", (e) => {
+function getPage() {
+  browser.tabs.query({currentWindow: true, active: true})
+    .then((tabs) => {
+      let full_url = tabs[0].url;
+      let url = new URL(full_url).hostname;
+      let api_request_url = api_host + url;
+      site_url.innerHTML = api_request_url;
+      return api_request_url;
+    })
+    .then(async function getOpenWPM(api_request_url){
+      const response = await fetch(api_request_url);
+      const data = await response.json();
+      document.getElementById('javasscript_cookies').innerHTML = data['javasscript_cookies']['count'];
+      document.getElementById('hosts').innerHTML = `
+      ${data.javasscript_cookies.hosts.map(function(item){
+        return `
+        <div class= "hosts">
+          ${item}
+        </div>
+        `
+      }).join('')}
+      `;
+      document.getElementById('redirect_count').innerHTML = data['http_redirects']['count'];
+      document.getElementById('redirects').innerHTML = `
+      ${data.http_redirects.redirects.map(function(item){
+        return `
+        <div class= "redirects">
+          ${item}
+        </div>
+        `
+      }).join('')}
+      `;
 
-    /**
-     * Given the name of a beast, get the URL to the corresponding image.
-     */
-     function beastNameToURL(beastName) {
-      switch (beastName) {
-        case "Frog":
-          return browser.extension.getURL("beasts/frog.jpg");
-        case "Snake":
-          return browser.extension.getURL("beasts/snake.jpg");
-        case "Turtle":
-          return browser.extension.getURL("beasts/turtle.jpg");
-      }
-    }
-    /**
-     * Insert the page-hiding CSS into the active tab,
-     * then get the beast URL and
-     * send a "beastify" message to the content script in the active tab.
-     */
-     function privacy(tabs) {
-      browser.tabs.insertCSS({code: hidePage}).then(() => {
-        let url = privacyNameToURL(e.target.textContent);
-        browser.tabs.sendMessage(tabs[0].id, {
-          command: "privacy",
-          privacyURL: url
-        });
-      });
-    }
-    /**
-     * Remove the page-hiding CSS from the active tab,
-     * send a "reset" message to the content script in the active tab.
-     */
-    function reset(tabs) {
-      browser.tabs.removeCSS({code: hidePage}).then(() => {
-        browser.tabs.sendMessage(tabs[0].id, {
-          command: "reset",
-        });
-      });
-    }
+    })
+  }
 
-    /**
-     * Just log the error to the console.
-     */
-    function reportError(error) {
-      console.error(`Could not load: ${error}`);
-    }
-
-    /**
-     * Get the active tab,
-     * then call "beastify()" or "reset()" as appropriate.
-     */
-    if (e.target.classList.contains("privacy")) {
-      browser.tabs.query({active: true, currentWindow: true})
-        .then(privacy)
-        .catch(reportError);
-    }
-    else if (e.target.classList.contains("reset")) {
-      browser.tabs.query({active: true, currentWindow: true})
-        .then(reset)
-        .catch(reportError);
-    }
-  });
-}
-
-/**
- * There was an error executing the script.
- * Display the popup's error message, and hide the normal UI.
- */
-function reportExecuteScriptError(error) {
-  document.querySelector("#popup-content").classList.add("hidden");
-  document.querySelector("#error-content").classList.remove("hidden");
-  console.error(`Failed to execute privacy content script: ${error.message}`);
-}
-
-/**
- * When the popup loads, inject a content script into the active tab,
- * and add a click handler.
- * If we couldn't inject the script, handle the error.
- */
-browser.tabs.executeScript({file: "/content_scripts/privacy.js"})
-.then(listenForClicks)
-.catch(reportExecuteScriptError);
+getPage()
